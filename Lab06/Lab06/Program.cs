@@ -5,12 +5,12 @@ class Program
 {
     static void Main()
     {
-        sayHello();
+        sayHello("Hello World.");
         Console.ReadLine();
     }
 
-    static void sayHello()
+    static void sayHello(string str)
     {
-        Console.WriteLine("Hello World.");
+        Console.WriteLine(str);
     }
 }
