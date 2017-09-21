@@ -9,20 +9,23 @@ namespace Labweek06
     {
         static void Main(string[] args)
         {
-
-            int height, long1, long2;
-            Console.Write("Enter height : ");
-            height = int.Parse(Console.ReadLine());
-            Console.Write("Enter long 1 : ");
-            long1 = int.Parse(Console.ReadLine());
-            Console.Write("Enter long 2 : ");
-            long2 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Area is : " + ans(height, long1, long2));
+            double weight = 0d;
+            ask(ref weight);
+            cal(ref weight);
+            Console.WriteLine("Weight on Moon is : {0}", weight);
             Console.ReadKey();
         }
-        static double ans(int height, int long1, int long2)
+        static double ask(ref double weight)
         {
-            return (0.5 * (long1 + long2) * height);
+            Console.Write("Enter weight on Moon : ");
+            weight = double.Parse(Console.ReadLine());
+            return weight;
+
+        }
+        static double cal(ref double weight)
+        {
+            weight *= 1.6;
+            return weight;
         }
     }
 }
