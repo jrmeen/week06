@@ -1,25 +1,28 @@
 ﻿using System;
+using System.Net;  // for web client
+using System.IO;   // for stream writer
 
-class Program
+
+namespace Labweek06
 {
-    static void Main()
+    class Program
     {
-        int num;
-        Console.Write("Enter number:");
-        num = int.Parse(Console.ReadLine());
-        check(ref num);
-        Console.WriteLine(num);
-        Console.ReadLine();
-    }
-    static void check(ref int i)
-    {
-        if (i % 2 == 0)
+        static void Main(string[] args)
         {
-            Console.WriteLine("Even number");
+
+            int height, long1, long2;
+            Console.Write("Enter height : ");
+            height = int.Parse(Console.ReadLine());
+            Console.Write("Enter long 1 : ");
+            long1 = int.Parse(Console.ReadLine());
+            Console.Write("Enter long 2 : ");
+            long2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Area is : " + ans(height, long1, long2));
+            Console.ReadKey();
         }
-        else
-            Console.WriteLine("Odd number");
+        static double ans(int height, int long1, int long2)
+        {
+            return (0.5 * (long1 + long2) * height);
+        }
     }
-
 }
-
