@@ -6,18 +6,16 @@ class Program
     static void Main()
     {
 
+        byte a = 3;
+        byte b = 5;
 
-        bool a = true;
-        bool b = false;
-        Console.WriteLine(a && b);
-        Console.WriteLine(a || b);
-        Console.WriteLine(!b);
-        Console.WriteLine(b || true);
-        Console.WriteLine((9 > 7) ^ (a == b));
-        Console.WriteLine((b != a) || (a == b));
-        Console.WriteLine((b != a) && (a == b));
-        Console.WriteLine((!a) && (!b));
-        Console.WriteLine((!a) || (!b));
+        Console.WriteLine(a | b);
+        Console.WriteLine(a & b);
+        Console.WriteLine(a ^ b);
+        Console.WriteLine(~a & b);
+        Console.WriteLine(a << 1);
+        Console.WriteLine(a << 2);
+        Console.WriteLine(a >> 1);
 
     }
 }
