@@ -1,18 +1,25 @@
-﻿
-using System;
+﻿using System;
 
 class Program
 {
     static void Main()
     {
-
-        int a = 2;
-        float f = 3.5f;
-        double d = 4.99d;
-        decimal money = 1254841354;
-        Console.WriteLine(a + " " + f + " " + d + " " + money);
-
-
-
+        int num;
+        Console.Write("Enter number:");
+        num = int.Parse(Console.ReadLine());
+        check(ref num);
+        Console.WriteLine(num);
+        Console.ReadLine();
     }
+    static void check(ref int i)
+    {
+        if (i % 2 == 0)
+        {
+            Console.WriteLine("Even number");
+        }
+        else
+            Console.WriteLine("Odd number");
+    }
+
 }
+
