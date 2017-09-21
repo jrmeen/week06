@@ -7,10 +7,10 @@ class Program
     {
 
 
-        double d = 5e9d;
-        Console.WriteLine(d);
-        int i = checked((int)d);
-        Console.WriteLine(i);
+        int a = 2;
+        string myString = a.ToString();
+        Console.WriteLine(myString);
+
 
 
     }
