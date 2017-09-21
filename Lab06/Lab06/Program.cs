@@ -6,14 +6,18 @@ class Program
     static void Main()
     {
 
-        int x = 10, y = 5;
-        Console.WriteLine("x > y : " + (x > y));
-        Console.WriteLine("x < y : " + (x < y));
-        Console.WriteLine("x >= y : " + (x >= y));
-        Console.WriteLine("x <= y : " + (x <= y));
-        Console.WriteLine("x == y : " + (x == y));
-        Console.WriteLine("x != y : " + (x != y));
 
+        bool a = true;
+        bool b = false;
+        Console.WriteLine(a && b);
+        Console.WriteLine(a || b);
+        Console.WriteLine(!b);
+        Console.WriteLine(b || true);
+        Console.WriteLine((9 > 7) ^ (a == b));
+        Console.WriteLine((b != a) || (a == b));
+        Console.WriteLine((b != a) && (a == b));
+        Console.WriteLine((!a) && (!b));
+        Console.WriteLine((!a) || (!b));
 
     }
 }
